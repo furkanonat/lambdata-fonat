@@ -1,6 +1,8 @@
 
 # new_lambdata/second_mod.py
 
+import pandas
+
 def data_wrangle(X):
     """
     X is a dataframe
