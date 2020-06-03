@@ -1,7 +1,8 @@
 
 # new_lambdata/second_mod.py
 
-import pandas
+import pandas as pd
+
 
 def data_wrangle(X):
     """
@@ -11,7 +12,7 @@ def data_wrangle(X):
     """
 
     # Convert date_recorded to datetime
-    X['date_recorded'] = pandas.to_datetime(X['date_recorded'], infer_datetime_format=True)
+    X['date_recorded'] = pd.to_datetime(X['date_recorded'], infer_datetime_format=True)
 
     # Split the datetime object into its components
     X['year_recorded']=X['date_recorded'].dt.year
